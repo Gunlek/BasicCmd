@@ -1,0 +1,39 @@
+author: Gunlek
+version: 1.0
+name: BasicCmd
+website: http://simple-duino.com
+main: com.simpleduino.basiccmd.BasicCmdPlugin
+permissions:
+  BasicCmd.admin.ban:
+    description: Donne la permission d'effectuer un /ban
+  BasicCmd.admin.tempban:
+    description: Donne la permission d'effectuer un /tempban
+  BasicCmd.admin.mute:
+    description: Donne la permission d'effectuer un /mute
+  BasicCmd.admin.unmute:
+        description: Donne la permission d'effectuer un /unmute
+  BasicCmd.admin.unban:
+    description: Donne la permission d'effectuer un /unban
+  BasicCmd.info:
+    description: Donne la permission d'effectuer un /info
+
+commands:
+  ban:
+    description: Bannis définitivement le joueur indiqué
+    permission: BasicCmd.admin.ban
+  unban:
+    description: Bannis définitivement le joueur indiqué
+    permission: BasicCmd.admin.unban
+  tempban:
+    description: Bannis temporairement le joueur indiqué pour la durée spécifiée
+    permission: BasicCmd.admin.tempban
+  mute:
+    description: Mute le joueur indiqué
+    permission: BasicCmd.admin.mute
+  unmute:
+      description: Démute le joueur indiqué
+      permission: BasicCmd.admin.unmute
+  info:
+    description: Envoie une information à tous les joueurs du serveurs
+    permission: BasicCmd.info
+    aliases: [info, infos]
